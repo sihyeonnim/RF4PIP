@@ -1,1 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><OutputType>WinExe</OutputType><TargetFramework>net10.0-windows10.0.19041.0</TargetFramework><UseWPF>true</UseWPF><AssemblyName>RF4PIP</AssemblyName><Product>RF4 PIP</Product><Version>1.0.0</Version></PropertyGroup></Project>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>RF4PIP</AssemblyName>
+    <Product>RF4 PIP</Product>
+    <Version>1.0.1</Version>
+    <ApplicationIcon>Assets/RF4PIP.ico</ApplicationIcon>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+  </PropertyGroup>
+  <ItemGroup>
+    <Resource Include="Assets/RF4PIP.ico" />
+  </ItemGroup>
+</Project>

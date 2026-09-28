@@ -56,6 +56,7 @@ public sealed class WpfPictureInPicturePresenter(Dispatcher dispatcher) : IPictu
         var window = new Window
         {
             Title = "RF4 PIP",
+            Icon = new BitmapImage(new Uri("pack://application:,,,/Assets/RF4PIP.ico")),
             Width = 480,
             Height = 300,
             MinWidth = 240,
@@ -63,7 +64,8 @@ public sealed class WpfPictureInPicturePresenter(Dispatcher dispatcher) : IPictu
             Content = content,
             Topmost = true,
             ShowInTaskbar = true,
-            WindowStyle = WindowStyle.ToolWindow,
+            WindowStyle = WindowStyle.SingleBorderWindow,
+            WindowStartupLocation = WindowStartupLocation.CenterScreen,
             ResizeMode = ResizeMode.CanResizeWithGrip,
             Background = Brushes.Black
         };

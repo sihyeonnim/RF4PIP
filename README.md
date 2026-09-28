@@ -2,7 +2,7 @@
 
 RF4Overlay에서 화면 캡처와 PIP 표시만 분리한 독립 Windows 앱입니다. 다른 프로젝트를 참조하지 않습니다.
 
-[Release 1.0](https://github.com/sihyeonnim/RF4PIP/releases/tag/1.0)에서 `RF4PIP.exe`를 다운로드해 실행하면 RF4 본체를 자동으로 찾아 항상 위에 표시합니다. 크기를 조절할 수 있으며 X를 누르면 캡처를 정리하고 종료합니다. 게임 종료·재실행·최소화 복원 시 자동 재연결합니다. Steam 스트리밍은 제외합니다.
+[최신 릴리스](https://github.com/sihyeonnim/RF4PIP/releases/latest)에서 `RF4PIP.exe`를 다운로드해 실행하면 RF4 본체를 자동으로 찾아 항상 위에 표시합니다. 크기를 조절할 수 있으며 X를 누르면 캡처를 정리하고 종료합니다. 게임 종료·재실행·최소화 복원 시 자동 재연결합니다. Steam 스트리밍은 제외합니다.
 
 Windows 10 2004 이상이 필요합니다. HDR·독점 전체화면은 실제 게임 검증이 필요합니다.
 
@@ -13,3 +13,7 @@ dotnet build RF4PIP.slnx
 dotnet run --project src/RF4PIP/RF4PIP.csproj
 dotnet publish src/RF4PIP/RF4PIP.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o artifacts/win-x64
 ```
+
+아이콘: [Windows ICO](src/RF4PIP/Assets/RF4PIP.ico). 16–256px 다중 해상도이며 곰의 세로 높이가 아이콘의 약 98%를 차지합니다.
+
+배포는 네이티브 WPF DLL도 EXE 내부에 포함합니다. 게시 후 `./tools/Test-Standalone.ps1 -Executable ./artifacts/win-x64/RF4PIP.exe`로 EXE만 별도 폴더에 복사한 상태에서 창 생성과 정상 종료를 검증합니다.
