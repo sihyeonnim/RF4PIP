@@ -5,7 +5,7 @@
     <UseWPF>true</UseWPF>
     <AssemblyName>RF4PIP</AssemblyName>
     <Product>RF4 PIP</Product>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <ApplicationIcon>Assets/RF4PIP.ico</ApplicationIcon>
     <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
   </PropertyGroup>
