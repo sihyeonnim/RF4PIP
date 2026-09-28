@@ -56,7 +56,8 @@ public sealed class WpfPictureInPicturePresenter(Dispatcher dispatcher) : IPictu
         var window = new Window
         {
             Title = "RF4 PIP",
-            Icon = new BitmapImage(new Uri("pack://application:,,,/Assets/RF4PIP.ico")),
+            // Give WPF the full-resolution image; BitmapImage reads only one ICO frame.
+            Icon = new BitmapImage(new Uri("pack://application:,,,/Assets/RF4PIP.png")),
             Width = 480,
             Height = 300,
             MinWidth = 240,
